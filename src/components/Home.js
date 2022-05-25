@@ -69,6 +69,9 @@ const Home = () => {
 
             }
         }
+        else {
+            alert("Please install Meta mask")
+        }
     }
 
     async function buyNft(nft) {

@@ -139,7 +139,7 @@ const CreateItem = () => {
                         />
                         {
                             fileUrl && (
-                                <img className="upload-img" id="ImageId" alt='upload image preview' width="50px" src={fileUrl} onLoad={handleImageLoaded} />
+                                <img className="upload-img" id="ImageId" alt='error occur' width="50px" src={fileUrl} onLoad={handleImageLoaded} />
                             )
                         }
                         <button onClick={listNFTForSale} className="createNft-btn" disabled={fileUrl && isImageloaded ? false : true}>

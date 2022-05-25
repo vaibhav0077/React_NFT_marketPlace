@@ -1,4 +1,3 @@
-import { ethers } from "ethers";
 import { useEffect, useState } from "react";
 import "./Main.css";
 
@@ -14,7 +13,6 @@ import ResellNFT from "./ResellNft";
 
 const Main = () => {
 
-    const bankReactDeployAddress = "0x53aF647C87b48Ef98B5A79f8deF3d6fA1466f486";
     const [isWalletConnected, setisWalletConnected] = useState(false);
 
     const walletConnected = async () => {

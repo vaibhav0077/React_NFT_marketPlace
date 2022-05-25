@@ -2,7 +2,7 @@ import { ethers } from "ethers";
 import { useEffect, useState } from "react";
 import NFTabi from '../utils/NFTMarketplace.json';
 import axios from 'axios';
-import { useNavigate, useSearchParams } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import './CreateItem.css'
 import { Loader } from "./Loader";
 
@@ -20,9 +20,7 @@ export default function ResellNFT() {
 
     const [isLoading, setisLoading] = useState(false)
 
-    useEffect(() => {
-        fetchNFT()
-    }, [id])
+
 
     async function fetchNFT() {
         if (!tokenURI) return
@@ -62,6 +60,9 @@ export default function ResellNFT() {
             setisLoading(false)
         }
     }
+    useEffect(() => {
+        fetchNFT()
+    }, [id])
 
     return (
         <>
@@ -75,7 +76,7 @@ export default function ResellNFT() {
                         />
                         {
                             image && (
-                                <img className="ImageId" width="350" src={image} />
+                                <img className="ImageId" width="350" alt="image error" src={image} />
                             )
                         }
                         <button onClick={listNFTForSale} className="createNft-btn">

@@ -85,7 +85,7 @@ const CreatorDashboard = () => {
                                 nfts.map((nft, i) => (
                                     <div key={i} className="nft-card">
                                         <div className="img-div">
-                                            <img src={nft.image} />
+                                            <img src={nft.image} alt="Alternate Image" />
                                         </div>
                                         <div className="nft-Info">
                                             <p className="">{nft.name}</p>

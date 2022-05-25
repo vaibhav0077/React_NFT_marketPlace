@@ -4,7 +4,6 @@ import NFTabi from '../utils/NFTMarketplace.json';
 import axios from 'axios';
 import './Home.css'
 import { Loader } from "./Loader";
-import Etherium from '../media/ethereum.svg'
 
 const Home = () => {
 
@@ -119,7 +118,7 @@ const Home = () => {
                                     nfts.map((nft, i) => (
                                         <div key={i} className="nft-card" id="imageId">
                                             <div className="img-div">
-                                                <img src={nft.image} />
+                                                <img src={nft.image} alt="image error" />
                                             </div>
                                             <div className="nft-Info">
                                                 <p className="">{nft.name}</p>

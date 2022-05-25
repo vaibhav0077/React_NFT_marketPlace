@@ -1,17 +1,13 @@
 import { ethers } from "ethers";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import NFTabi from '../utils/NFTMarketplace.json';
-import axios from 'axios';
 import { create as ipfsHttpClient } from 'ipfs-http-client'
 import './CreateItem.css'
 import { useNavigate } from 'react-router-dom';
 import { Loader } from "./Loader";
 
 
-
 const client = ipfsHttpClient('https://ipfs.infura.io:5001/api/v0')
-
-const url = " https://api.pinata.cloud"
 
 const CreateItem = () => {
 
@@ -143,7 +139,7 @@ const CreateItem = () => {
                         />
                         {
                             fileUrl && (
-                                <img className="upload-img" id="ImageId" width="50px" src={fileUrl} onLoad={handleImageLoaded} />
+                                <img className="upload-img" id="ImageId" alt='upload image preview' width="50px" src={fileUrl} onLoad={handleImageLoaded} />
                             )
                         }
                         <button onClick={listNFTForSale} className="createNft-btn" disabled={fileUrl && isImageloaded ? false : true}>

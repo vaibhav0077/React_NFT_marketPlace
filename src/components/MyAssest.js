@@ -92,7 +92,7 @@ const MyAssest = () => {
                                         nfts.map((nft, i) => (
                                             <div key={i} className="nft-card">
                                                 <div className="img-div">
-                                                    <img src={nft.image} />
+                                                    <img src={nft.image} alt="image error" />
                                                 </div>
                                                 <div className="nft-Info">
                                                     <p className="">{nft.name}</p>

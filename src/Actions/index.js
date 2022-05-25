@@ -1,0 +1,1 @@
+export const nft_market_deploy_address = "0x53aF647C87b48Ef98B5A79f8deF3d6fA1466f486";

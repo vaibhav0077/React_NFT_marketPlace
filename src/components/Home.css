@@ -1,0 +1,127 @@
+.NFT-container {
+    display: flex;
+    flex-direction: row;
+
+    flex-wrap: wrap;
+    flex: 1 0 calc(25% - 10px);
+
+}
+
+.nft-card {
+    border: 2px solid beige;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 320px;
+    min-width: 172px;
+    margin: 12px;
+    padding-bottom: 10px;
+    border-radius: 12px;
+    background-color: azure;
+    cursor: pointer;
+}
+
+.nft-card:hover {
+    width: 328px;
+    box-shadow: 5px 10px 8px #e93c3c;
+}
+
+.nft-Info {
+    font-size: 26px;
+    width: 100%;
+    padding-left: 10px;
+    display: flex;
+    margin-bottom: 15px;
+    flex-direction: column;
+
+}
+
+p {
+    padding: 0px;
+    margin: 0;
+
+}
+
+img {
+    width: 100%;
+    border-radius: 12px;
+    padding: 5px;
+}
+
+
+.img-div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.nft-price-div {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-left: 14px;
+
+}
+
+
+
+.nft-price {
+    font-size: x-large;
+}
+
+.nft-price-buy-btn-div {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.nft-price-buy-btn {
+    width: 70%;
+}
+
+
+
+/* CSS */
+.nft-price-buy-btn {
+    align-self: center;
+    background-color: #fff;
+    background-image: none;
+    background-position: 0 90%;
+    background-repeat: repeat no-repeat;
+    background-size: 4px 3px;
+    border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
+    border-style: solid;
+    border-width: 2px;
+    box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
+    box-sizing: border-box;
+    color: #41403e;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Neucha, sans-serif;
+    font-size: 1rem;
+    line-height: 23px;
+    outline: none;
+    padding: .75rem;
+    text-decoration: none;
+    transition: all 235ms ease-in-out;
+    border-bottom-left-radius: 15px 255px;
+    border-bottom-right-radius: 225px 15px;
+    border-top-left-radius: 255px 15px;
+    border-top-right-radius: 15px 225px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.nft-price-buy-btn:hover {
+    box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+    transform: translate3d(0, 2px, 0);
+}
+
+.nft-price-buy-btn:focus {
+    box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
+}
